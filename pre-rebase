@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "it is not allowed to do rebasing"
+exit 2

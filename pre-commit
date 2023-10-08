@@ -1,0 +1,12 @@
+#!/bin/bash
+regex='@online\.noa$'
+email=$GIT_AUTHOR_EMAIL
+
+if [[ $email =~ $regex ]]
+then 
+    echo "Your $email satifies Git policy"
+    exit 0
+else
+    "echo Your $email does not satifies Git policy"
+    exit 2
+fi
